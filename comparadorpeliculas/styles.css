@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fdfcfc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1f1f1f, #353535);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #fdfcfc; /* Cambiado de negro a blanco para que coincida con el fondo */
+}
+
+.forms-container {
+    display: flex;
+    flex-direction: column; /* Cambiado de row a column para apilar los formularios */
+    align-items: center;
+}
+
+.comparison-container {
+    display: flex;
+    gap: 20px;
+}
+
+.comparison-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-form {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Alinea los elementos del formulario verticalmente */
+}
+
+.movies-container,
+#comparison-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.movie-info {
+    text-align: center;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #000000, #222222);
+    transition: transform 0.3s;
+    max-width: 400px;
+    width: 100%;
+}
+
+.movie-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.movie-info .star-rating {
+    font-size: 5.5em; /* Ajusta el tamaño de fuente de las estrellas según tus preferencias */
+}
+
+.movie-info:hover {
+    transform: scale(1.1);
+}

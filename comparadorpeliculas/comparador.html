@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="main-title">Comparador de Películas</h1>
+
+    <div class="comparison-container">
+        <!-- Primer formulario para ingresar nombres de películas -->
+        <div class="comparison-item">
+            <form id="search-form-1" class="search-form form-1">
+                <label for="search-input-1">Buscar Película 1:</label>
+                <input type="text" id="search-input-1" list="movies-list-1" autocomplete="off" required>
+                <datalist id="movies-list-1"></datalist>
+                <button type="submit">Buscar</button>
+            </form>
+
+            <!-- Contenedor para mostrar la información de la primera película -->
+            <div id="movies-container-1" class="movies-container">
+                <!-- La información de la primera película comparada se mostrará aquí -->
+            </div>
+        </div>
+
+        <!-- Segundo formulario para ingresar nombres de películas -->
+        <div class="comparison-item">
+            <form id="search-form-2" class="search-form form-2">
+                <label for="search-input-2">Buscar Película 2:</label>
+                <input type="text" id="search-input-2" list="movies-list-2" autocomplete="off" required>
+                <datalist id="movies-list-2"></datalist>
+                <button type="submit">Buscar</button>
+            </form>
+
+            <!-- Contenedor para mostrar la información de la segunda película -->
+            <div id="movies-container-2" class="movies-container">
+                <!-- La información de la segunda película comparada se mostrará aquí -->
+            </div>
+        </div>
+    </div>
+
+    <script src="comparador.js"></script>
+</body>
+</html>
